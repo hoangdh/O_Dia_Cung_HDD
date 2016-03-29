@@ -48,3 +48,5 @@
 <img src="http://www.helpdisc.hr/gallery/HDD%20Head.jpg" width=40% height=40% ></img>
 
 *Hình ảnh Đầu đọc/ghi và Cần di chuyển*
+
+#Còn tiếp...
