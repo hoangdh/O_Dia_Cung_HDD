@@ -49,4 +49,30 @@
 
 *Hình ảnh Đầu đọc/ghi và Cần di chuyển*
 
-#Còn tiếp...
+#### 3. Chia Partition với `parted` và `fdisk`
+
+##### `parted` trên Ubuntu 14.0.4 Server
+
+Khi gắn ổ cứng mới vào, ta phải gắn nhãn (lable)
+Dùng lệnh `help mklable` để biết thêm chi tiết
+
+<img src="http://i1363.photobucket.com/albums/r714/HoangLove9z/disk/parted_zpsadwltzqq.png" />
+
+Dùng lệnh mkpart để tạo partition mới
+
+<img src="http://i1363.photobucket.com/albums/r714/HoangLove9z/disk/parted-2_zpspyn7w6me.png" />
+
+Ở đây, ta chỉ có thể tạo 4 Primary Partition. Để tạo hơn 4 Partition, chúng ta phải tạo 1 Extended partition.
+
+<img src="http://i1363.photobucket.com/albums/r714/HoangLove9z/disk/parted-extended_zpsjkx9gzhf.png" />
+
+###### Tạo ổ Logical
+
+(Các ổ Logical có tổng dung lượng bằng ổ Extended)
+
+<img src="http://i1363.photobucket.com/albums/r714/HoangLove9z/disk/parted-extended-2_zpsq04rikwu.png" />
+
+#### `fdisk` 
+Chia ổ ở fdisk, sau khi chia xong bấm `w` để lưu lại những gì đã thao tác.
+
+<img src="http://i1363.photobucket.com/albums/r714/HoangLove9z/disk/fdisk-2_zpssg3xlvyg.png" />
